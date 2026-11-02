@@ -18,7 +18,7 @@ class ChatModerationPlugin(BasePlugin):
     """群聊行为管理插件。"""
 
     plugin_name = "chat_moderation"
-    plugin_description = "群聊拉黑：被骚扰时毒舌回击并拉黑对方，拉黑期间忽略其消息"
+    plugin_description = "群聊拉黑：被骚扰时按人设回应并拉黑对方，拉黑期间忽略其消息"
     plugin_version = "1.0.0"
 
     configs: list[type] = [ChatModerationConfig]

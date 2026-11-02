@@ -1,0 +1,52 @@
+{
+  "name": "chat_moderation",
+  "display_name": "群聊行为管理",
+  "version": "1.0.0",
+  "description": "群聊拉黑功能：被骚扰/嘲讽/阴阳怪气时可拉黑对方（10-180 分钟），拉黑期间忽略其消息",
+  "author": "MoFox Team",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "plugins": [],
+    "components": []
+  },
+  "include": [
+    {
+      "component_type": "service",
+      "component_name": "ban_manager",
+      "dependencies": [],
+      "enabled": true
+    },
+    {
+      "component_type": "action",
+      "component_name": "ban_user",
+      "dependencies": [
+        "chat_moderation:service:ban_manager"
+      ],
+      "enabled": true
+    },
+    {
+      "component_type": "event_handler",
+      "component_name": "ban_message_filter",
+      "dependencies": [
+        "chat_moderation:service:ban_manager"
+      ],
+      "enabled": true
+    }
+  ],
+  "entry_point": "plugin.py",
+  "api_version": {
+    "log_api": "1.0.0",
+    "service_api": "1.0.0"
+  },
+  "python_dependencies": [],
+  "dependencies_required": true,
+  "categories": [
+    "moderation"
+  ],
+  "tags": [
+    "qq",
+    "group",
+    "ban",
+    "moderation"
+  ]
+}

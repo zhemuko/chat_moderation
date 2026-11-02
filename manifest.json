@@ -3,7 +3,7 @@
   "display_name": "群聊行为管理",
   "version": "1.0.0",
   "description": "群聊拉黑功能：被骚扰/嘲讽/阴阳怪气时可拉黑对方（10-180 分钟），拉黑期间忽略其消息",
-  "author": "MoFox Team",
+  "author": "折木",
   "license": "GPL-3.0",
   "dependencies": {
     "plugins": [],

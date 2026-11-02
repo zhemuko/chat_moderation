@@ -1,6 +1,6 @@
 """chat_moderation 插件入口。
 
-群聊行为管理：被骚扰 / 嘲讽 / 阴阳怪气时，可毒舌回击后拉黑对方。
+群聊行为管理：被骚扰 / 嘲讽 / 阴阳怪气时，按角色人设回应后拉黑对方。
 """
 
 from __future__ import annotations
